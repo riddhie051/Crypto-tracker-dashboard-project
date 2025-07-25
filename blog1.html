@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading{
+            height: 20vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#000080;
+            color: white;
+            font-size: 2rem;
+            border-bottom: 1px solid white;
+        }
+
+        .blogs{
+            height: 55vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: #00008B;
+        }
+
+        .blog-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            padding-left:2rem ;
+            gap: 2rem;
+            background-color: white;
+            height: 35vh;
+            width: 22vw;
+            border-radius: 0.5cm;
+            box-shadow: 0 8px 24px rgba(0,0,0);
+            transition: 0.3s ease;
+
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        a{
+            background-color: aqua;
+            height: 1.5rem;
+            width: 5rem;
+            padding: 0.5rem;
+            border-radius: 0.3cm;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Latest from the Crypto Blog</h1>
+    </div>    
+    <div class="blogs">
+          <div class="blog-card">
+          <img src="image of a bitcoin.png" alt="Bitcoin" height="25%" width="25%">
+          <h3>What is Bitcoin?</h3>
+          <p>Learn how Bitcoin works and why it started the crypto revolution.</p>
+          <a href="#">Read More</a>
+          </div>
+
+          <div class="blog-card">
+          <img src="image of ethereum.png" alt="Ethereum" height="25%" width="25%">
+          <h3>Ethereum vs Bitcoin</h3>
+          <p>Explore the key differences between Ethereum and Bitcoin in simple terms.</p>
+          <a href="#">Read More</a>
+          </div>
+
+          <div class="blog-card">
+          <img src="image of solana.png" alt="Solana" height="25%" width="25%">
+          <h3>Top 5 Cryptos to Watch in 2025</h3>
+          <p>Here are 5 coins that could explode in the coming year.</p>
+          <a href="#">Read More</a>
+          </div>
+    </div>
+        
+</body>
+</html>

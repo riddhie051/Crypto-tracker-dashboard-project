@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker Dashboard</title>
+  <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+  <div class="navigationbar">
+    <div id="slidebar">
+      <!-- Hidden checkbox toggle -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Label acts as the menu icon -->
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="tracker.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="pricing1.html">Pricing</a>
+    <a href="blog1.html">Blog</a>
+  </div>
+    </div>
+
+    <div class="logowthheading">
+    <img src="Crypto logo.png" alt="image1" height="8%" width="8%" id="logo1">
+
+  <div id="name">
+    <h1>CryptoDashX</h1> <!--have to change it afrer some time-->
+  </div>
+    </div>
+
+    <div id="signinbutton">
+      <button id="Istbutton">Sign Up<img src="arrow.png" alt="img2" height="25%" width="25%"></button>
+    </div>
+
+    
+  </div>
+
+
+  <div class="maincontent">
+    
+    <div id="heading">
+        <h1 id="name2">Largest</h1>
+        <h1 id="name2">Crypto Marketplace</h1>
+    </div>
+    
+    <div id="para">
+         <p>Welcome to the world's largest cryptocurrency marketplace.</p>
+         <p>Sign up to explore more about cryptos.</p>
+    </div>
+    
+    <div class="searchcontainer">
+          <input type="text" id="search" placeholder="Search by coin name..." />
+    </div>
+
+    <div id="cards">
+          <div id="crypto-list" class="crypto-list">
+          <!-- Coins will be shown here -->
+    </div>
+
+    <!-- Modal for Chart -->
+    <div id="chartModal" class="modal">
+      <div class="modal-content">
+        <span id="closeBtn">&times;</span>
+        <canvas id="priceChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+
+
+    
+  </div>
+
+  
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="tracker.js">
+</script>
+</html>
+

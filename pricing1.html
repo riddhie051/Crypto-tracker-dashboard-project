@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading{
+            height: 20vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#000080;
+            color: white;
+            font-size: 2rem;
+            border-bottom: 1px solid white;
+
+        }
+
+        #pricing-cards{
+            height: 55vh;
+            width: 100vx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: #00008B;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            height: 45vh;
+            width: 22vw;
+            background-color: white;
+            border-radius: 0.5cm;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border: 4.5px solid rgb(19, 20, 20) ;
+        }
+
+        .card .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 191, 255, 0.4);
+            border: 1px solid #00BFFF;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .card:hover .overlay {
+            opacity: 1;
+        }
+
+        h3{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 2.5rem;
+        }
+
+        span{
+            font-size: 1rem;
+            color: gray;
+        }
+
+        button{
+            height: 2.5rem;
+            width: 6.5rem;
+            background-color:#00BFFF;
+            color: white;
+            border-radius: 0.2cm;
+            border: none;
+        }
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h2>Pricing Plans</h2>
+    </div>
+
+    <div id="pricing-cards">
+        <div class="card">
+            <div class="overlay"></div>
+                 <h3>Free</h3>
+      <p class="price">$0<span>/month</span></p>
+      <ul>
+        <li>✅ Track top 10 coins</li>
+        <li>✅ Real-time prices</li>
+        <li>✅ Charts & Search</li>
+      </ul>
+      <button>Get Started</button>
+        </div>
+
+        
+        <div class="card">
+            <div class="overlay"></div>
+            <h3>Pro</h3>
+      <p class="price">$4.99<span>/month</span></p>
+      <ul>
+        <li>✅ All Free Features</li>
+        <li>✅ Watchlist support</li>
+        <li>✅ Price Alerts</li>
+      </ul>
+      <button>Upgrade</button>
+        </div>
+        
+        
+        <div class="card">
+            <div class="overlay"></div>
+            <h3>Premium</h3>
+      <p class="price">$9.99<span>/month</span></p>
+      <ul>
+        <li>✅ All Pro Features</li>
+        <li>✅ Unlimited coins</li>
+        <li>✅ API Access & Support</li>
+      </ul>
+      <button>Go Premium</button>
+        </div>
+    </div>
+    
+</body>
+</html>

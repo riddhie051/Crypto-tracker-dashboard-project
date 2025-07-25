@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            width: 100vw;
+            text-align: center;
+            background-color:#000080;
+            color: white;
+            font-size: 2rem;
+            border-bottom: 1px solid white;
+            
+        }
+
+        
+            .card{
+            background: white;
+      color: #090979;
+      padding: 1.5rem;
+      width: 240px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      border-top: 4px solid #090979;
+      height: 6rem;
+        }
+
+        .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .featurescards{
+        height: 55vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding:2rem ;
+        background-color: #00008B;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Features</h1>
+    </div>
+
+    <div class="featurescards">
+        <div class="card">
+        <h3>💰 Live Price Tracking</h3>
+        <p>Get real-time prices of Bitcoin, Ethereum, and other top cryptocurrencies.</p>
+    </div>
+
+    <div class="card">
+        <h3>🔍 Instant Search</h3>
+        <p>Find any coin by name or symbol using a lightning-fast search bar.</p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Price Charts</h3>
+        <p>Visualize historical trends with interactive line and bar charts.</p>
+      </div>
+
+      <div class="card">
+        <h3>⭐ Watchlist</h3>
+        <p>Save your favorite coins to track them easily (local or user-based).</p>
+      </div>
+
+      <div class="card">
+        <h3>🌙 Dark Mode(Premium)</h3>
+        <p>Toggle between light and dark themes for better night-time viewing.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔔 Price Alerts(Premium)</h3>
+        <p>Get notified when coins hit target prices (optional future feature).</p>
+      </div>
+    </div>
+    
+</body>
+</html>
