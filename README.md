@@ -16,3 +16,14 @@ Tech Stack:-
 How to Use:-
 
 1. Clone this repository:
+    https://github.com/riddhie051/Crypto-tracker-dashboard-project.git
+
+2. Open `tracker.html` in your browser.
+3. Explore live price updates and filter coins easily.
+
+Project Goal:-
+To provide a simple and efficient tool for tracking cryptocurrency markets with real-time updates and visual insights.
+
+Developed By:-
+**Riddhie Sengar**  
+
